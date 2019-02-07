@@ -1,0 +1,22 @@
+{
+  "name": "mlh_nodeworkshop",
+  "version": "1.0.0",
+  "description": "Code for MLH Node Workshop",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrstirzaker/MLH_NodeWorkshop.git"
+  },
+  "author": "@nrstirzaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nrstirzaker/MLH_NodeWorkshop/issues"
+  },
+  "homepage": "https://github.com/nrstirzaker/MLH_NodeWorkshop#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
