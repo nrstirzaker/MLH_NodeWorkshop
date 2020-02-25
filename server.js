@@ -39,5 +39,6 @@ app.delete('/recommendation/:index', function(req,res){
 })
 
 app.listen(port, function(){
-     console.log(`Example app listening on port ${port}!`)
+    //note the quote marks are actually backsticks
+    console.log(`Example app listening on port ${port}!`)
 })
