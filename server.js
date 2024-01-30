@@ -11,29 +11,29 @@ app.get('/', function(req, res){
     res.send('Alive:' + new Date())
 } )
 
-app.get('/recommendations', function(req,res){
+app.get('/films', function(req,res){
     var films = store.getAll();
     res.send(films)
 } )
 
-app.get('/recommendation/:index', function(req,res){
+app.get('/film/:index', function(req,res){
     var film = store.retrieve(req.params.index);
     res.send(film);
 })
 
-app.post('/recommendation', function(req,res){
+app.post('/film', function(req,res){
     var film = req.body;
     store.save(film);
     res.json({"Action":"Saved","Success":"True"});
 })
 
-app.put('/recommendation/:index', function(req,res){
+app.put('/film/:index', function(req,res){
     var film = req.body;
     store.update(req.params.index,film);
     res.json({"Action":"Saved","Success":"True"});
 })
 
-app.delete('/recommendation/:index', function(req,res){
+app.delete('/film/:index', function(req,res){
     var success = store.remove(req.params.index);
     res.json({"Action":"Delete","Success":success});
 })
